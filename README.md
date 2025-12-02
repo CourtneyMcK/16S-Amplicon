@@ -8,7 +8,7 @@ To install DADA2 package from Bioconductor (version 3.21):
 ```{}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install("dada2")
+BiocManager::install("dada2", version = "3.21")
 ```
 The following packages are also needed for processing DADA2 outputs and graphing data (if desired) in R:
 
@@ -16,13 +16,13 @@ The following packages are also needed for processing DADA2 outputs and graphing
 ```{}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install("phyloseq")
+BiocManager::install("phyloseq", version = "3.21")
 ```
 Biostrings (from Bioconductor version 3.21) (will be used for table manipulation of large biological sequences or sets of sequences):
 ```{}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install("Biostrings")
+BiocManager::install("Biostrings", version = "3.21")
 ```
 
 tidyverse (version 2.0.0 was used) (will be used for table manipulation and viewing):
